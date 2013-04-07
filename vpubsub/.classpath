@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.2.3/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.2.3/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.2.3/fluent-hc-4.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.2.3/httpclient-4.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.2.3/httpclient-cache-4.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.2.3/httpcore-4.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-client-4.2.3/httpmime-4.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/commons-io-1.2.jar"/>
+	<classpathentry kind="lib" path="lib/commons-cli-1.1.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-core-4.2.3/httpcore-4.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-core-4.2.3/httpcore-ab-4.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpcomponents-core-4.2.3/httpcore-nio-4.2.3.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-6.1.11.jar"/>
+	<classpathentry kind="lib" path="lib/servlet-api-2.5-6.1.11.jar"/>
+	<classpathentry kind="lib" path="lib/jetty-util-6.1.11.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
