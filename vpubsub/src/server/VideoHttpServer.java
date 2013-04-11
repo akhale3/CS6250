@@ -70,7 +70,7 @@ public class VideoHttpServer extends HttpServlet {
 	 */
 	
 	@SuppressWarnings("rawtypes")
-	protected void getReqIndex(int clientID)//HttpServletRequest req)
+	protected void getReqIndex(int clientID, String mode)//HttpServletRequest req)
 	{
 		System.out.println(clientID);
 		boolean flag = false;
@@ -82,7 +82,7 @@ public class VideoHttpServer extends HttpServlet {
 					reqIndex = j;
 					flag = true;
 				}
-			if(flag == false)	//New stream
+			if(flag == false && mode.equals("post"))	//New stream
 			{
 				for(j = 0; j < reqLimit; j++)
 				{
@@ -118,7 +118,8 @@ public class VideoHttpServer extends HttpServlet {
 		byte[] image = null;
 		ServletOutputStream os = resp.getOutputStream();
 		int streamID = Integer.parseInt(req.getParameter("streamID"));
-		getReqIndex(streamID);	//Invoke method on clientID
+		String mode = "get";
+		getReqIndex(streamID, mode);	//Invoke method on clientID
 		
 		if(queue[reqIndex].size() > 0)
 		{
@@ -148,7 +149,8 @@ public class VideoHttpServer extends HttpServlet {
 			//String location = req.getParameter("x");
 			int clientID = Integer.parseInt(req.getParameter("clientID"));
 			String keywords = req.getParameter("keywords");
-			getReqIndex(clientID);	//Invoke method on clientID
+			String mode = "post";
+			getReqIndex(clientID, mode);	//Invoke method on clientID
 			
 			ArrayList<String> keywordList = new ArrayList<String>();
 			StringTokenizer st = new StringTokenizer(keywords, ";");
